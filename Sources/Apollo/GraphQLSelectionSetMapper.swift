@@ -12,7 +12,7 @@ final class GraphQLSelectionSetMapper<SelectionSet: AnySelectionSet>: GraphQLRes
 
   init(
     stripNullValues: Bool = true,
-    allowMissingValuesForOptionalFields: Bool = false
+    allowMissingValuesForOptionalFields: Bool = true
   ) {
     self.stripNullValues = stripNullValues
     self.allowMissingValuesForOptionalFields = allowMissingValuesForOptionalFields
